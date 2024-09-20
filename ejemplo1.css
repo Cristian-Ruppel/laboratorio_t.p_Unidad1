@@ -1,0 +1,74 @@
+/* Estilos generales del cuerpo de la página */
+body {
+  font-family: 'Roboto', sans-serif; /* Estilo de la fuente */
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333; /* Color del texto */
+  background: linear-gradient(to bottom, #66ccff, #cce6ff); /* Gradiente de fondo azul claro a más claro */
+  margin: 0;
+  padding: 20px; /* Agrega margen alrededor del contenido */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+}
+
+/* Asegura que el main ocupe el espacio restante entre el header y el footer */
+main {
+  flex: 1;
+  padding: 20px; /* Agrega margen alrededor del contenido principal */
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px; /* Ajusta el espaciado para el footer */
+  margin-top: auto; /* Empuja el footer hacia el final del contenedor flex */
+  position: relative; /* Para asegurar el comportamiento en responsividad */
+  font-size: 14px; /* Ajusta el tamaño de fuente para un footer más angosto */
+}
+
+/* Enlaces dentro del footer */
+footer a {
+  color: #fff; /* Color de los enlaces dentro del footer */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividad para pantallas de hasta 600px */
+@media (max-width: 600px) {
+  body {
+    padding: 10px; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  footer {
+    font-size: 13px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+    padding: 8px; /* Reduce el espaciado en pantallas pequeñas */
+  }
+}
+
+/* Responsividad para pantallas de hasta 900px */
+@media (max-width: 900px) {
+  body {
+    padding: 15px; /* Ajusta el padding para pantallas medianas */
+  }
+
+  footer {
+    font-size: 14px; /* Tamaño de fuente ligeramente mayor en pantallas medianas */
+    padding: 9px; /* Ajusta el espaciado para pantallas medianas */
+  }
+}
+
+/* Estilos para centrar la imagen dentro de un elemento figure */
+figure {
+  text-align: center; /* Centra el contenido del <figure> */
+}
+
+figure img {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen al 100% del contenedor */
+  height: auto; /* Mantiene la proporción original de la imagen */
+}
