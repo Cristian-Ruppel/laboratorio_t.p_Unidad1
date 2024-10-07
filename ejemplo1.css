@@ -1,37 +1,30 @@
-/* Estilos generales del cuerpo de la página */
 body {
-  font-family: 'Roboto', sans-serif; /* Estilo de la fuente */
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #333; /* Color del texto */
-  background: linear-gradient(to bottom, #66ccff, #cce6ff); /* Gradiente de fondo azul claro a más claro */
+  color: #333;
+  background: linear-gradient(to bottom, #66ccff, #cce6ff); 
   margin: 0;
-  padding: 20px; /* Agrega margen alrededor del contenido */
+  padding: 20px; 
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+  min-height: 100vh;
 }
-
-/* Asegura que el main ocupe el espacio restante entre el header y el footer */
 main {
   flex: 1;
-  padding: 20px; /* Agrega margen alrededor del contenido principal */
+  padding: 20px;
 }
-
-/* Estilos para el footer */
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px; /* Ajusta el espaciado para el footer */
-  margin-top: auto; /* Empuja el footer hacia el final del contenedor flex */
-  position: relative; /* Para asegurar el comportamiento en responsividad */
-  font-size: 14px; /* Ajusta el tamaño de fuente para un footer más angosto */
+  padding: 10px;
+  margin-top: auto; 
+  position: relative; 
+  font-size: 14px;
 }
-
-/* Enlaces dentro del footer */
 footer a {
-  color: #fff; /* Color de los enlaces dentro del footer */
+  color: #fff;
   text-decoration: none;
 }
 
@@ -42,12 +35,12 @@ footer a:hover {
 /* Responsividad para pantallas de hasta 600px */
 @media (max-width: 600px) {
   body {
-    padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    padding: 10px; 
   }
 
   footer {
-    font-size: 13px; /* Reduce el tamaño de fuente en pantallas pequeñas */
-    padding: 8px; /* Reduce el espaciado en pantallas pequeñas */
+    font-size: 13px;
+    padding: 8px; 
   }
 }
 
@@ -65,7 +58,7 @@ footer a:hover {
 
 /* Estilos para centrar la imagen dentro de un elemento figure */
 figure {
-  text-align: center; /* Centra el contenido del <figure> */
+  text-align: center;
 }
 
 figure img {
