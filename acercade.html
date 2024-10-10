@@ -1,192 +1,45 @@
-body {
-  font-family: 'Roboto', sans-serif; 
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333; 
-  margin: 0;
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-weight: bold; 
-  background-image: url('C:/Users/fabul/Desktop/PROGRAMACION WEB/repositorio-cristian-ruppel/laboratorio web/unidad1/tp1/img/11.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de</title>
+    <link rel="stylesheet" href="ejemplo1.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="preguntas.html">Preguntas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Acerca de mi:</h1>
+    <figure>
+        <img src="C:\Users\fabul\Desktop\PROGRAMACION WEB\repositorio-cristian-ruppel\laboratorio web\unidad1\tp1\" alt="Descripción de la imagen" width="200" height="200">
+        <figcaption>Lic.Cristian M. Ruppel</figcaption>
+    </figure>
 
-.titulo {
-  text-align: center;
-  margin: 20px 0; 
-}
+    <article>
+        <p>Soy de Carmen de Patagones Provincia de Buenos Aires. Naci en 1981. Fui Obrero de la construccion durante mis formacion como Profesor de Artes Visuales en la Escuela de Artes Alcides Biagetti de la misma localidad, ademas estudie Licenciatura En investigacion Educativa en la Universidad de Rio Negro.Actualmente soy auxiliar del Nodo Sierra Colorada y en parelelo curso la Tecnicatura en Desarrollo Web.El cambio al mundo de la programacion pasa porque en el campo del desarrollo web puedo aplicar la totalidad de las herramientas que adquiri como profe e investigador, creo que en la actualidad transitamos la posverdad, la biopolitica desarrollada por el frances Michel Foucault entre 1975  y 1976,en este panorama actual las instituciones educativas se han convertido en una institucion que no tiene que ver con mi formacion como Profesor de escuela Operativa ni como campo de investigacion, por tanto continuo avanzando hacia el paradigma de un mundo mejor y de una continuidad evolutiva del ser solo que a traves del mundo de la tecnologia,siempre mañana es mejor...</p>
+    </article>
+   
+    <article>
+        <h3>Sobre la aplicación de preguntas</h3>
+        <p>La sociedad en general nunca se pregunta por las cosas obvias de la cotidianidad, y son estas aparentes insignificancias u obviedades las que sumadas van conformando el cambio real del ambito social. </p>
+    </article>
+ 
+    <footer>
+        <p>Nombre: Cristian M. Ruppel</p>
+        <p>Email: fabulandya@hotmail.com</p>
+        <p>Dirección: Monseñor Esandi y Ayacucho, 8500 – Viedma, Río Negro, Argentina</p>
+        <p>Para más información, visita la página del CURZA: 
+            <a href="https://web.curza.uncoma.edu.ar" target="_blank">CURZA - Universidad Nacional del Comahue</a>
+        </p>
+    </footer>
 
-h1, h4, h3 {
-  margin: 0; 
-  padding: 0;
-}
-article {
-  margin-bottom: 20px;
-}
-
-
-main {
-  flex: 1;
-  padding: 20px; 
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  margin-top: auto;
-  position: relative; 
-  font-size: 14px;
-}
-
-/* Enlaces dentro del footer */
-footer a {
-  color: #fff; 
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Responsividad para pantallas de hasta 600px */
-@media (max-width: 600px) {
-  body {
-    padding: 10px; /* Reduce el padding en pantallas pequeñas */
-  }
-
-  footer {
-    font-size: 13px; /* Reduce el tamaño de fuente en pantallas pequeñas */
-    padding: 8px; /* Reduce el espaciado en pantallas pequeñas */
-  }
-}
-
-/* Responsividad para pantallas de hasta 900px */
-@media (max-width: 900px) {
-  body {
-    padding: 15px;
-  }
-
-  footer {
-    font-size: 14px; 
-    padding: 9px; 
-  }
-}
-
-figure {
-  text-align: center; 
-}
-
-figure img {
-  max-width: 100%;
-  height: auto;
-}
-figure {
-  width: 45%;
-  margin:  auto;
-  border: 5px solid rgba(0, 0, 0, 0.8);
-  border-radius: 8px;
-  padding: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-/* Estilos para la barra de navegación */
-.navbar {
-  background-color: #F5F5DC;
-  overflow: hidden; 
-  padding: 0; 
-  margin: 0; 
-}
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex; 
-}
-
-.navbar li {
-  flex: 1; 
-}
-
-.navbar a {
-  display: block; 
-  color: rgb(12, 12, 12); 
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.navbar a:hover {
-  background-color: #ddd; 
-  color: black; 
-}
-
-form {
-  background-color: rgba(255, 255, 255, 0.9); 
-  border-radius: 8px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 10px; 
-  margin: 2px auto; 
-  max-width: 800px; 
-}
-
-.form-group {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.form-input {
-  width: 60%; 
-  padding: 10px;
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-}
-
-/* Estilos bloque 2
-.bloque-2 {
-  display: flex;
-  justify-content: space-between; 
-  margin: 20px 0; 
-  padding: 10px; 
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.metodos-contacto h3 {
-  margin-left: 40px;
-}
-
-.metodos-suscripcion h3 {
-  margin-left: 90px; 
-}
-
-.btn-cargar {
-  background-color: green; 
-  color: white; 
-  font-size: 20px;
-  padding: 10px 20px; 
-  border: none;
-  border-radius: 5px; 
-  cursor: pointer; 
-  margin: 10px auto; 
-  max-width: 320px; 
-  width: 100%; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.btn-cargar:hover {
-  background-color: darkgreen; /* Cambia el color al pasar el ratón */
-}
-
-.btn-cargar:active {
-  transform: scale(0.95); 
-}
+</body>
+</html>
